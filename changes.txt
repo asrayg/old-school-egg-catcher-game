@@ -1,0 +1,8 @@
+Change Background color
+Remove remenents in the game Background
+Make a button for instructions
+Easter Egg for amma
+High Score Adder and SPot for high scores
+Refactor it
+Host it 
+Make posts and promote on social media
