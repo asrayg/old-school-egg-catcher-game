@@ -9,7 +9,7 @@ html, body {
 body {
   margin: 0;
   padding: 0;
-	background: #564e47 url('../img/game-wrap-bg.png');
+	background: #564e47 url('../img/background.png');
 	color: #9A998E;
   font-size: 14px;
   line-height: 1.2em;
@@ -77,7 +77,7 @@ h3 {
 	width: 572px;
   height: 350px;
   margin: 0 auto;
-  background: transparent url('../img/game-bg.jpg') center center no-repeat;
+  background: transparent url('../img/game-background.png') center center no-repeat;
   position: relative;
 }
 
@@ -442,8 +442,9 @@ h3 {
       background: transparent url('../img/github-logo.png') center bottom no-repeat;
     }
     #game-wrap .more-info a.restart-game {
-      padding-left: 20px;
-      background: transparent url('../img/restart-icon.png') left center no-repeat;
+  padding-left: 16px; /* less space for smaller icon */
+  background: transparent url('../img/restart.png') left center no-repeat;
+  background-size: 20px 20px; /* scale the icon down */
     }
     #game-wrap .more-info .how-to-play {
       padding-bottom: 44px;
@@ -585,3 +586,11 @@ body.is-mobile {
     right: -34px;
   }
 }
+
+#game-wrap .more-info a.restart-game,
+#game-wrap .more-info a.restart-game:visited,
+#game-wrap .more-info a.restart-game:hover {
+  color: #4A463F;   /* darker than #9A998E */
+  text-decoration: none;
+}
+
