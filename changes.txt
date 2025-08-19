@@ -1,4 +1,3 @@
-Tell people to flip phone when they enter
 Add a lil space under the restart button in the mobile view
 Easter Egg for amma
 High Score Adder and SPot for high scores
