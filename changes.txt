@@ -1,5 +1,3 @@
-Add a lil space under the restart button in the mobile view
-Easter Egg for amma
 High Score Adder and SPot for high scores
-Refactor it
+Refactor it and easter egg it
 Make posts and promote on social media

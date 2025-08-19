@@ -4,7 +4,6 @@ var GameManager = function() {
   this.start();
 }
 
-// Initial game settings
 GameManager.prototype.init = function () {
   this.score = 0;
   this.loss = 0;
@@ -14,7 +13,6 @@ GameManager.prototype.init = function () {
   this.count = 4;
   this.level = 1;
   this.speed = 800;
-  // this.maxSpeed = 200;
   this.interval = this.speed*2.5;
   this.point = 2;
 
@@ -26,7 +24,6 @@ GameManager.prototype.init = function () {
   this.basketStartPosition = { x: 0, y: 1 };
 };
 
-// Set up the game
 GameManager.prototype.setup = function () {
   this.keyboard = new KeyboardInputManager();
   this.keyboard.on("move", this.move.bind(this));
@@ -60,7 +57,6 @@ GameManager.prototype.move = function (data) {
 
   switch (data.type) {
     case 'arrow':
-      // 0: up, 1: right, 2: down, 3: left, 4: R - restart
       if(data.key%2 == 0) {
         position.y = (data.key > 0) ? 0 : 1;
       } else {

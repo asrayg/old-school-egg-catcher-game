@@ -30,10 +30,8 @@ KeyboardInputManager.prototype.listen = function () {
     }
   });
 
-  // Handle clicks/taps on the four on-screen control buttons
   var controls = document.getElementById('controls');
   if (controls) {
-    // Use event delegation so it works for all buttons
     controls.addEventListener('click', function (e) {
       var btn = e.target.closest('a[data-x][data-y]');
       if (!btn) return;
@@ -45,7 +43,6 @@ KeyboardInputManager.prototype.listen = function () {
       self.emit('move', { x: x, y: y, type: 'button' });
     }, false);
 
-    // Improve responsiveness on touch screens (no 300ms delay)
     controls.addEventListener('touchstart', function (e) {
       var touchEl = e.target.closest('a[data-x][data-y]');
       if (!touchEl) return;
@@ -58,7 +55,6 @@ KeyboardInputManager.prototype.listen = function () {
     }, { passive: false });
   }
 
-  // Hook up the Restart button in the side panel
   var restart = document.querySelector('.more-info a.restart-game');
   if (restart) {
     restart.addEventListener('click', function (e) {
