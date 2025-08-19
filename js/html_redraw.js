@@ -31,7 +31,7 @@ HTMLredraw.prototype.updateScore = function(data) {
     var num = (i < empty) ? 0 : parseInt(score.charAt(i - empty));
     elements[i].className = 'n-' + num;
   }
-};
+};    
 
 HTMLredraw.prototype.updateLossCount = function(data) {
   this.changeAttributesValue(['data-loss'], [data.loss]);
