@@ -1,3 +1,0 @@
-High Score Adder and SPot for high scores
-Refactor it and easter egg it
-Make posts and promote on social media
